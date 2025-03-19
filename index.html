@@ -1,116 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UB App Dev Club</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UB App Dev Club</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <h1 class="logo">UB App Dev Club</h1>
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#benefits" class="nav-link">Benefits</a></li>
-                        <li><a href="#join" class="nav-link">Join</a></li>
-                    </ul>
-                </nav>
+  <div class="container">
+    <!-- HEADER START -->
+    <header class="header">
+      <div class="header-content">
+        <!-- Left side: UB Logo + "App Dev Club" text -->
+        <div class="nav-left">
+          <img src="assets/ub_logo.jpg" alt="UB Logo" class="ub-logo" />
+          <h1 class="logo-text">App Dev Club</h1>
+        </div>
+
+        <!-- Right side: Navigation Links -->
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#eboard" class="nav-link">Meet the eboard</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <div class="hero-image-container">
+            <img src="assets/app.svg" alt="iPhone Wireframe" class="wireframe" />
+          </div>
+
+          <!-- Text Container -->
+          <div class="hero-text-content">
+            <h2 class="hero-title">Want to learn iOS Dev?</h2>
+            <p class="hero-text">
+              Join a supportive community of students, collaborate on real-world app projects, 
+              and bring your next big idea to life!
+            </p>
+            <a href="#about" class="button">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EBOARD SECTION (Add content here if you want to describe the eboard) -->
+      <section id="eboard" class="eboard">
+        <div class="section-content">
+          <h2 class="section-title">Meet the Eboard</h2>
+          
+          <!-- Eboard Grid Container -->
+          <div class="eboard-grid">
+            <!-- Member 1 -->
+            <div class="eboard-member">
+              <img src="assets/member1.jpg" alt="Eboard Member 1" class="eboard-photo" />
+              <h3>Alex</h3>
+              <p>President</p>
             </div>
-        </header>
-
-        <main class="main">
-            <section id="hero" class="hero">
-                <div class="hero-content">
-                    <img src="assets/app.svg" alt="iPhone Wireframe" class="wireframe" />
-                      
-                        <h2 class="hero-title">Want to learn iOS Dev?</h2>
-                        <p class="hero-text">
-                          Join a community of passionate developers and bring your app ideas to life!
-                        </p>
-                        <button class="button">Learn More</button>
-                
-                </div>
-            </section>
-
-            <section id="about" class="about">
-                <div class="section-content">
-                    <h2 class="section-title">About Us</h2>
-                    <div class="about-content">
-                        <div class="about-image">
-                            <img 
-                                src="https://via.placeholder.com/400x300" 
-                                alt="Students collaborating on app development" 
-                                class="image"
-                            />
-                        </div>
-                        <div class="about-text">
-                            <p>
-                                The UB App Dev Club is a student-run organization dedicated to fostering app development skills and creativity among University at Buffalo students. We provide a collaborative environment where members can learn, share ideas, and work on exciting projects together.
-                            </p>
-                            <p>
-                                Whether you're a beginner or an experienced developer, our club offers opportunities to enhance your skills, network with like-minded individuals, and stay up-to-date with the latest trends in app development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="benefits" class="benefits">
-                <div class="section-content">
-                    <h2 class="section-title">Benefits of Joining</h2>
-                    <div class="benefits-grid">
-                        <div class="benefit-card">
-                            <h3 class="benefit-title">Hands-on Workshops</h3>
-                            <p>Participate in regular workshops covering various aspects of app development, from UI/UX design to backend integration.</p>
-                        </div>
-                        <div class="benefit-card">
-                            <h3 class="benefit-title">Networking Opportunities</h3>
-                            <p>Connect with fellow students, alumni, and industry professionals who share your passion for app development.</p>
-                        </div>
-                        <div class="benefit-card">
-                            <h3 class="benefit-title">Project Collaboration</h3>
-                            <p>Work on real-world projects and build a portfolio that will impress future employers or clients.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="join" class="join">
-                <div class="section-content">
-                    <h2 class="section-title">Join the Club</h2>
-                    <form class="form">
-                        <input type="text" placeholder="Full Name" required class="input" />
-                        <input type="email" placeholder="UB Email Address" required class="input" />
-                        <input type="text" placeholder="Major" required class="input" />
-                        <input type="text" placeholder="Graduation Year" required class="input" />
-                        <textarea 
-                            placeholder="Why do you want to join the UB App Dev Club?" 
-                            rows="4"
-                            required
-                            class="textarea"
-                        ></textarea>
-                        <button type="submit" class="submit-button">
-                            Submit Application
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2025 UB App Dev Club. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#" class="footer-link">Privacy Policy</a>
-                    <a href="#" class="footer-link">Terms of Service</a>
-                    <a href="#" class="footer-link">Contact Us</a>
-                </div>
+      
+            <!-- Member 2 -->
+            <div class="eboard-member">
+              <img src="assets/member2.jpg" alt="Eboard Member 2" class="eboard-photo" />
+              <h3>Rohin</h3>
+              <p>Vice President</p>
             </div>
-        </footer>
-    </div>
+      
+            <!-- Member 3 -->
+            <div class="eboard-member">
+              <img src="assets/member3.jpg" alt="Eboard Member 3" class="eboard-photo" />
+              <h3>Amitesh</h3>
+              <p>Treasurer</p>
+            </div>
+      
+            <!-- Member 4 -->
+            <div class="eboard-member">
+              <img src="assets/member4.jpg" alt="Eboard Member 4" class="eboard-photo" />
+              <h3>Kay</h3>
+              <p>Secretary</p>
+            </div>
+      
+            <!-- Member 5 -->
+            <div class="eboard-member">
+              <img src="assets/member5.jpg" alt="Eboard Member 5" class="eboard-photo" />
+              <h3>Smaran</h3>
+              <p>Tech Lead</p>
+            </div>
+      
+            <!-- Member 6 -->
+            <div class="eboard-member">
+              <img src="assets/member6.jpg" alt="Eboard Member 6" class="eboard-photo" />
+              <h3>Zach</h3>
+              <p>Tech Lead</p>
+            </div>
+      
+            <!-- Member 7 -->
+            <div class="eboard-member">
+              <img src="assets/karthik.png" alt="Eboard Member 7" class="eboard-photo" />
+              <h3>Karthik</h3>
+              <p>Tech lead</p>
+            </div>
+      
+            <!-- Member 8 -->
+            <div class="eboard-member">
+              <img src="assets/member8.jpg" alt="Eboard Member 8" class="eboard-photo" />
+              <h3>Tauhidur</h3>
+              <p>Tech Lead</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about">
+        <div class="section-content">
+          <h2 class="section-title">About Us</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img 
+                src="assets/about.svg" 
+                alt="Students collaborating on app development" 
+                class="image"
+              />
+            </div>
+            <div class="about-text">
+              <p>
+                The UB App Dev Club is a student-run organization dedicated to fostering app development 
+                skills and creativity among University at Buffalo students. We provide a collaborative 
+                environment where members can learn, share ideas, and work on exciting projects together.
+              </p>
+              <p>
+                Whether you're a beginner or an experienced developer, our club offers opportunities to 
+                enhance your skills, network with like-minded individuals, and stay up-to-date with the 
+                latest trends in app development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION (Previously "benefits") -->
+      <section id="projects" class="benefits">
+        <div class="section-content">
+          <h2 class="section-title">Projects</h2>
+          <div class="benefits-grid">
+            <!-- Example project cards -->
+            <div class="benefit-card">
+              <h3 class="benefit-title">iOS Workshop App</h3>
+              <p>Collaborate on a simple iOS app that teaches the basics of Swift and Xcode.</p>
+            </div>
+            <div class="benefit-card">
+              <h3 class="benefit-title">Campus Navigator</h3>
+              <p>Help build a campus navigation tool to assist new students in finding their way around.</p>
+            </div>
+            <div class="benefit-card">
+              <h3 class="benefit-title">Your Idea!</h3>
+              <p>Pitch your own project and team up with other members to bring it to life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION (Previously "join") -->
+      <section id="contact" class="join">
+        <div class="section-content">
+          <h2 class="section-title">Contact Us / Join the Club</h2>
+          <form class="form">
+            <input type="text" placeholder="Full Name" required class="input" />
+            <input type="email" placeholder="UB Email Address" required class="input" />
+            <input type="text" placeholder="Major" required class="input" />
+            <input type="text" placeholder="Graduation Year" required class="input" />
+            <textarea 
+              placeholder="Why do you want to join the UB App Dev Club?" 
+              rows="4"
+              required
+              class="textarea"
+            ></textarea>
+            <button type="submit" class="submit-button">
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 UB App Dev Club. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
-
